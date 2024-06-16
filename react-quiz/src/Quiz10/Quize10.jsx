@@ -1,6 +1,8 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import './App.css';  
+import './quize10.css';
+
+
 
 class Quize10 extends React.Component {
   constructor(props) {
@@ -67,7 +69,7 @@ class Quize10 extends React.Component {
         <header>
           <h1>인지 중재 치료</h1>
           <p>{this.state.date}</p>
-          <p>날씨 정보는 여기에 표시됩니다.</p>
+          
         </header>
         <main>
           <div className="maintext-box">
@@ -168,7 +170,7 @@ class Quize10 extends React.Component {
               </p>
             </div>
           </div>
-          <div className="button-container">
+          <div className="button-container10">
             <button className="previous-button" onClick={() => this.navigate('main')}>
               이전
             </button>
@@ -241,3 +243,4 @@ class ClockComponent extends React.Component {
 }
 
 export default Quize10;
+  
