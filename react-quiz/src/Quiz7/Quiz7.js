@@ -51,7 +51,7 @@ function Quiz7() {
     useEffect(() => {
         const timeOut = setTimeout(() => {
             setVisible(false);
-        }, 2000);
+        }, 70000);
         return () => clearTimeout(timeOut);
     }, []);
 
@@ -59,7 +59,7 @@ function Quiz7() {
     useEffect(() => {
         const timeOut = setTimeout(() => {
             setInvisible(true);
-        }, 2000);
+        }, 70000);
         return () => clearTimeout(timeOut);
     }, []);
     
