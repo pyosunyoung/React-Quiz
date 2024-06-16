@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+:root {
+  --bck: #293443;
+  --font: #FCBE40;
+  --box: #655735;
+  
+}
+*{
+  font-family: 'Zen Dots', sans-serif;
+}
+.Stage {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.quiz_text h2 {
+  text-align: center;
+}
+
+.condition_warning_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.example_container,
+.condition_box,
+.warning_box {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+.example_container .example-box,
+.condition_box .example-box,
+.warning_box .example-box {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 24px;
+  background-color: #f0f0f0;
+}
+
+.example_container .example-operators,
+.condition_box .example-operators,
+.warning_box .example-operators {
+  padding: 10px 0;
+  font-size: 24px;
+  background-color: #fff;
+}
+
+.condition_box,
+.warning_box {
+  width: 45%;
+  vertical-align: top;
+}
+
+.condition_box h4,
+.warning_box h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.warning_box h4 {
+  color: red;
+}
+
+.quiz_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  width: 200px;
+  margin: auto;
+  margin-top: 10px;
+  background: var(--box);
+  transform: skew(0deg, 0deg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  animation: mymove 5s infinite;
+  color: var(--font);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.quiz {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.quiz input {
+  width: 80px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.number-result {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+.input4 {
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup {
+  border: 2px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.next_page {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.next_page a {
+  font-size: 24px;
+}
+
+.buttonR {
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+
+

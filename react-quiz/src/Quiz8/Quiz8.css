@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Quiz8.js start */
+.Quiz8-main {
+    flex: 1;
+    background-color: transparent;
+    color: #333;
+    margin: 25px auto;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.Quiz8-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Quiz8-table {
+    width: 100%;
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+    border-collapse : collapse;
+}
+
+/* Quiz8.js answer start */
+.Quiz8-answer {
+    margin: 40px 200px;
+    padding: 40px;
+    display: block;
+    flex-direction: row;
+    /* border: 2px solid grey; */
+    border-radius: 16px;
+    justify-content: center;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 50px;
+}
+.Quiz8-answer-content {
+    font-size: 20px;
+}
+.Quiz8-answer-content-inner {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.Quiz8-answer-button-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Quiz8-answer-button {
+    margin: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 17px;
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.7);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.Quiz8-answer-button:hover {
+    background-color: rgba(0, 0, 139, 0.65);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Quiz8-answer-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Quiz8.js table start */
+.Quiz8-table, .Quiz8-table-answer {
+    border-collapse : collapse;
+}
+.Quiz8-table:hover, #Quiz8-table-click:hover {
+    cursor: pointer;
+}
+.Quiz8-table-selected {
+    background-color: rgba(0, 0, 139, 0.15);
+}
+.Quiz8-table-answer {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}

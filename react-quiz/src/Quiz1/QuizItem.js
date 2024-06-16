@@ -73,7 +73,7 @@ const QuizItem = ({ index, updateScore, reset }) => {
 
   return (
     <div className='quiz'>
-      Random Number: {number}
+      {number}
       <input
         type='text'
         value={operator1}

@@ -1,0 +1,42 @@
+.example_container2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example_container2 table {
+  width: 90%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.example_container2 th,
+.example_container2 td {
+  width: 20%; /* assuming 5 columns, so 100% / 5 = 20% */
+  text-align: center;
+  padding: 8px; /* adjust padding as needed */
+}
+
+.change_button {
+  margin-top: 20px;
+}
+td, td {
+  text-align: center;
+}
+.quiz {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5em; /* Increase font size */
+}
+
+.quiz th,
+.quiz td {
+  padding: 16px; /* Increase padding for larger cells */
+  text-align: center;
+}

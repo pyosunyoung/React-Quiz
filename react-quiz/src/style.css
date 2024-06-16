@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+.QuizMain-goHome {
+  position: absolute;
+  bottom: 1px;
+  left: 30px;
+}
+
 .container{
   flex: 1;
   background-color: transparent;

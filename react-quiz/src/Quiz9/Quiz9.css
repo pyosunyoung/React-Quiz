@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Quiz9.js start */
+.Quiz9-main {
+    flex: 1;
+    background-color: transparent;
+    color: #333;
+    margin: 25px auto;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+/* Quiz9.js question start */
+.Quiz9-container {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Quiz9-container-h3 {
+    margin-top: 60px;
+    font-size: 23px;
+}
+.Quiz9-container-h4 {
+    font-size: 17px;
+    opacity: 0.6;
+}
+.Quiz9-container-hint {
+    width: 250px;
+    margin: 14px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz9.js answer start */
+.Quiz9-answer {
+    margin: 10px 200px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+}
+.Quiz9-answer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+.Quiz9-answer-content-inner {
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.Quiz9-answer-button {
+    margin: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 17px;
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.7);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.Quiz9-answer-button:hover {
+    background-color: rgba(0, 0, 139, 0.65);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Quiz9-answer-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}

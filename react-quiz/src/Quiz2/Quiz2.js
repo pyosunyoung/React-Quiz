@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import '../style.css';
-
+import './quiz2.css';
 function Quiz2() {
   const arrowBox = ["↗", "↙", "↖", "↘", "↕"];
   const arrowToNumber = {
@@ -58,8 +58,8 @@ function Quiz2() {
 
     if (incorrectAnswers.length === 0 && incorrectAnswers2.length === 0) {
       Swal.fire({
-        title: "Good job!",
-        text: "All answers are correct!",
+        title: "정답입니다!",
+        text: "다음문제로 넘어가세요!",
         icon: "success",
         timer: 1500,
         didClose: handleReset 
@@ -67,9 +67,9 @@ function Quiz2() {
     } else {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: "Some answers are incorrect.",
-        footer: `<p>Correct answers: ${correctAnswers.join(", ")} and ${correctAnswers2.join(", ")}</p>`,
+        title: "틀렸습니다ㅜ",
+        text: "다시 시도해 보세요",
+        footer: `<p> 정답: ${correctAnswers.join(", ")} and ${correctAnswers2.join(", ")}</p>`,
         timer: 1500,
       });
     }
@@ -77,13 +77,11 @@ function Quiz2() {
 
   return (
     <div className='container'>
-      <div>
-        <span className='Stage'>화살표→숫자 적기</span>
-      </div>
+      
       <div className='quiz_text'>
-        <h2>화살표가 다양한 방향으로 그려져 있습니다.<br />빈칸에 보기와 같이 알맞은 숫자를 적어보세요.</h2>
+        <h2>Q. 화살표가 다양한 방향으로 그려져 있습니다. 빈칸에 보기와 같이 알맞은 숫자를 적어보세요.</h2>
       </div>
-      <div className='example_container'>
+      <div className='example_container2'>
         <table border={1}>
           <thead>
             <tr>
@@ -100,7 +98,7 @@ function Quiz2() {
       </div>
       <div className='quiz_container'>
         <div className='change_button'>
-          <button onClick={handleReset}>리셋</button>
+          <button className='buttonR' onClick={handleReset}>Reset</button>
         </div>
         <div className='quiz'>
           <table border={1}>
@@ -134,10 +132,10 @@ function Quiz2() {
             </tbody>
           </table>
         </div>
-        <button onClick={handleSubmit}>Submit</button>
+        <button className='buttonR' onClick={handleSubmit}>Submit</button>
       </div>
       <div className='next_page'>
-        <Link to={'/Quiz3'}>다음문제</Link>
+        <Link to={'/Quiz3'} className='start-button'>다음문제</Link>
       </div>
     </div>
   );

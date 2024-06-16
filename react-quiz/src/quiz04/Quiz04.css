@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+.quiz-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Hahmlet", serif;
+  }
+  
+  .quiz-block {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  .quiz-block img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  
+  .answer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    
+    gap: 50px;
+  }
+
+  .option-container {
+    display: flex;
+    border: 2px solid transparent;
+    padding: 15px;
+  }
+
+  .option-container:hover{
+    border-color :#007bff;
+    transition: border-color 0.3s;
+  }
+
+  .answer-option {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+  }
+
+  .option-container img {
+    margin-top: 20px;
+    object-fit: contain;
+  }
+  
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+  
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+  
+  .rotate-270 {
+    transform: rotate(270deg);
+  }
+  
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+  
+  .rotate-135 {
+    transform: rotate(135deg);
+  }
+  
+  .rotate-225 {
+    transform: rotate(225deg);
+  }
+  
+  .rotate-315 {
+    transform: rotate(315deg);
+  }
+
+  .next_page {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }

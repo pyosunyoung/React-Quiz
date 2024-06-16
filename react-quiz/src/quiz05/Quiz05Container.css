@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz05-container5 {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 5px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.quiz05-div5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.input-container5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.answer-box-wrapper5 {
+  position: relative;
+}
+
+.answer-box5 {
+  padding: 5px;
+  width: 150px;
+  height: 40px; /* Increased height for better visibility */
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: large;
+  font-family: transparent;
+}
+
+.button-container5 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.clear-button5, .submit-button5 {
+  width: 30px;
+  height: 50%;
+  font-size: 16px;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.clear-button5 {
+  border-bottom: none;
+  border-top-right-radius: 5px;
+}
+.submit-button5 {
+  border-bottom-right-radius: 5px;
+}
+
+.answer05-container5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: x-large;
+  font-weight: bolder;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+.answer05-button5{
+  border: 1px solid #ddd;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.answer05-button5:hover {
+  background-color: #e0e0e0;
+  border : 3px solid #007bff;
+  transition: border-color 0.3s;
+}
+
+.next_page5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 30%;
+  font-size: 24px;
+  justify-content: space-around
+  
+}
+
+.next_page6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}

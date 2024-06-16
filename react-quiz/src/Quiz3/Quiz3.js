@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Quiz3Item from '../Quiz3Item';
+import Quiz3Item from './Quiz3Item';
 import Swal from 'sweetalert2';
 import '../style.css';
-
+import './quiz3.css'
+import { Link } from 'react-router-dom';
 function Quiz3() {
   const initialQuestions = [
     { number: 8, price: 530 },
     { number: 9, price: 620 },
     { number: 7, price: 200 },
-    { number: 11, price: 510 }
+    { number: 12, price: 510 }
   ];
 
   const [userAnswers, setUserAnswers] = useState(initialQuestions.map(() => ({ ten: "", fifty: "", hundred: "" }))); // { ten: "", fifty: "", hundred: "" }구조 4개 생성 및 배열 초기화
@@ -31,8 +32,8 @@ function Quiz3() {
     const incorrectCount = correctAnswers.length - correctCount;
 
     Swal.fire({
-      title: "Results",
-      html: `<p>${correctCount} correct, ${incorrectCount} incorrect</p>`,
+      title: "결과",
+      html: `<p>${correctCount}개 맞았습니다, ${incorrectCount}개 틀렸습니다</p>`,
       icon: correctCount === correctAnswers.length ? "success" : "error",
       timer: 1500,
     });
@@ -40,17 +41,14 @@ function Quiz3() {
 
   return (
     <div className='container'>
-      <div>
-        <span className='Stage'>주어진 동전으로 금액 만들기</span>
-      </div>
+      
       <div className='quiz_text'>
-        <h2>'10원, 50원, 100원' 동전을 이용하여 제시된 금액이 되려면 각각 몇개씩 필요한지 적어보세요.</h2>
+        <h2>Q. ' 10원, 50원, 100원 ' 동전을 이용하여 제시된 금액이 되려면 각각 몇개씩 필요한지 적어보세요.</h2>
       </div>
-      <div className='example_container'>
-        보기 + -
-      </div>
-      <div className='quiz_container'>
-        <div className='quiz'>
+      
+      <div className='quiz_container3'>
+        <div className='quiz3'>
+          
           {initialQuestions.map((question, index) => ( //처음 생성된건 index1, 2 3 이렇게 map이니까 차례로 생성(4번 생성)
             <Quiz3Item
               key={index}
@@ -61,10 +59,11 @@ function Quiz3() {
             />
           ))}
         </div>
+        
       </div>
-      <button onClick={handleSubmit}>Submit</button>
+      <button className='buttonR' onClick={handleSubmit}>Submit</button>
       <div className='next_page'>
-        {/* Add link to next page if needed */}
+      <Link to={'/Quiz4'} className='start-button'>다음문제</Link>
       </div>
     </div>
   );
