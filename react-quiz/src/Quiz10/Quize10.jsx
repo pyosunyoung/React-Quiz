@@ -65,12 +65,7 @@ class Quize10 extends React.Component {
 
   renderMainPage() {
     return (
-      <div className="quiz-page">  
-        <header>
-          <h1>인지 중재 치료</h1>
-          <p>{this.state.date}</p>
-          
-        </header>
+      <div className="quiz-page" style={{paddingTop:"60px", marginTop:"30px"}}>  
         <main>
           <div className="maintext-box">
             승희 씨는 여고 동창들과 <u>11시 30분에 강남역</u>에서 점심을 먹기로 하였습니다.<br />
@@ -94,10 +89,7 @@ class Quize10 extends React.Component {
 
   renderQuizPage() {
     return (
-      <div className="quiz-page">
-        <header>
-          <h1>인지 중재 치료</h1>
-        </header>
+      <div className="quiz-page" style={{paddingTop:"60px", marginTop:"30px"}}>
         <main>
           <div className="question-container">
             <div className="question">
