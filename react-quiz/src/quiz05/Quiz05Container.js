@@ -10,17 +10,14 @@ function Quiz05Container(props) {
   const [score, setScore] = useState(0);
   const [count, setCount] = useState(0);
 
-  //렌더링 방지
   useEffect(() => {
     setQuiz(randomQuiz());
   }, []);
 
-  // 숫자 랜덤 생성
   function randomQuiz() {
     let num1, num2, num3, total;
 
     function randomNum() {
-      // 중복 없을 때까지 실행
       do {
         num1 = Math.floor(Math.random() * 99 + 1);
         num2 = Math.floor(Math.random() * 99 + 1);
@@ -29,23 +26,19 @@ function Quiz05Container(props) {
 
       total = num1 + num2 - num3;
 
-      // 0보다 작거나 100보다 크면 함수 다시 실행
       if (total <= 0 || total > 100) {
         randomNum();
       }
     }
 
-    // 중복없는 숫자 생성 함수 호출
     randomNum();
 
-    // 값이 0보다 작거나 100보다 크면 안됨.
     while (total < 0 || total > 100) {
-      // 다시 숫자를 생성
       randomNum();
       total = num1 + num2 - num3;
     }
 
-    setCorrect(changeIntToChn(total)); // 정답을 한자로 변환하여 저장
+    setCorrect(changeIntToChn(total));
     return { num1, num2, num3, total };
   }
 

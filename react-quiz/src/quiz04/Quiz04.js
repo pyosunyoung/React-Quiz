@@ -13,12 +13,14 @@ const images = [
 
 const degrees = [45, 90, 135, 180, 225, 270, 315];
 
+
 function getRandomDegree(cD) {
   const availableDegrees = degrees.filter((degree) => degree !== cD);
   return availableDegrees[Math.floor(Math.random() * availableDegrees.length)];
 }
 
 function generateRandomOptions(randomImage) {
+
   const correctDeg = degrees[Math.floor(Math.random() * degrees.length)];
   const rotatedImage = { img: randomImage, class: `rotate-${correctDeg}` };
 
@@ -35,7 +37,6 @@ function generateRandomOptions(randomImage) {
     class: `rotate-${deg}`,
   }));
 
-  // Shuffle options
   optionImages.sort(() => Math.random() - 0.5);
 
   return { optionImages, rotatedImage, correctDeg};
@@ -54,12 +55,9 @@ function Quiz04(props) {
   }, []);
 
   function generateQuiz() {
-    //img 중에 랜덤으로 가져옴
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    //
     const { optionImages, rotatedImage, correctDeg } = generateRandomOptions(randomImage);
     
-    //각각 useState를 사용해서 현재 이미지, 문제 이미지, 각도를
     setCurrentImage(randomImage);
     setOptions(optionImages);
     setCorrectOption(rotatedImage);

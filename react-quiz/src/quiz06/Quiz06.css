@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* 추가된 속성 */
+    overflow: hidden; 
   }
   
   .img06 {
@@ -29,12 +29,12 @@
   }
   
   .txt-boxes {
-    width: 6rem; /* 너비를 줄임 */
-    height: 30px; /* 높이 추가 */
+    width: 6rem; 
+    height: 30px; 
     margin: 0 5px;
     padding: 5px;
     font-size: 16px;
-    text-align: center; /* 텍스트 가운데 정렬 */
+    text-align: center; 
   }
   
   .quiz06-submit-btn {

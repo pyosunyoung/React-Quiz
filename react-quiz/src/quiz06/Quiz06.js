@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import './Quiz06.css';
 import { Link } from 'react-router-dom';
-// 총 6개의 끝말잇기 세트
 const wordSets = [
   [
     { img: "/imgs/바나나.jpg", word: '바나나' },
@@ -72,7 +71,7 @@ function Quiz06() {
     setImageWords(randomSet);
 
     const randomPositions = getRandomPositions(fixedPositions, 5);
-    randomPositions.unshift({ x: 350, y: 200 }); // 첫 번째 이미지를 고정된 위치로 설정
+    randomPositions.unshift({ x: 350, y: 200 });
     setPositions(randomPositions);
   }
 
@@ -113,13 +112,11 @@ function Quiz06() {
           text: `${newScore} / 3`,
           confirmButtonText: '확인'
         }).then((result) => {
-            /* 
-              메인페이지로 넘기는 로직 구현 필요
-            */
+
             setScore(0);
             setCount(0);
             setAnswers(Array(6).fill(''));
-            setUsedIdx([]); // 인덱스 배열 초기화
+            setUsedIdx([]);
             generateQuiz();
         });
       } else {
