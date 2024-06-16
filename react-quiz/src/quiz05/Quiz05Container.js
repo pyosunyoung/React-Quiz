@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import "./Quiz05Container.css";
+import { Link } from "react-router-dom";
 
 function Quiz05Container(props) {
   const samples = props.samples;
@@ -140,6 +141,11 @@ function Quiz05Container(props) {
             {item.char}
           </div>
         ))}
+        </div>
+        <div className='next_page'>
+        
+          <Link to={'/Quiz6'} className='start-button'>다음문제</Link>
+        
         
       </div>
     </>

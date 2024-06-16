@@ -131,9 +131,6 @@ function Quiz04(props) {
             </div>
         ))}
       </div>
-      <div className='next_page'>
-        <Link to={'/Quiz5'} className='start-button'>다음문제</Link>
-      </div>
     </div>
   );
 }
