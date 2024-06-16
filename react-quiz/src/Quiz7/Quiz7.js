@@ -47,7 +47,6 @@ const q2 = <Quiz7_2  img1={img1} img2={img2} img3={img3} img4={img4} />;
 const q3 = <Quiz7_3  img1={img1} img2={img2} img3={img3} img4={img4} />;
 
 function Quiz7() {
-    //[보기] 2분 간 보인 후 비활성화, 현재는 기능 동작 여부 확인을 위해 2초로 설정해 둠
     const [visible, setVisible] = useState(true);
     useEffect(() => {
         const timeOut = setTimeout(() => {
@@ -56,7 +55,6 @@ function Quiz7() {
         return () => clearTimeout(timeOut);
     }, []);
 
-    //[보기] 2분 간 보일 때 숨어져 있다가 2분 후 활성화, 현재는 기능 동작 여부 확인을 위해 2초로 설정해 둠
     const [invisible, setInvisible] = useState(false);
     useEffect(() => {
         const timeOut = setTimeout(() => {
@@ -65,7 +63,6 @@ function Quiz7() {
         return () => clearTimeout(timeOut);
     }, []);
     
-    //문제 랜덤 선정
     const questions = [q1, q2, q3];
     const random = parseInt(Math.random() * questions.length);
    
