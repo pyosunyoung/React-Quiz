@@ -26,7 +26,7 @@ function Quiz2() {
   const [randomArrows2, setRandomArrows2] = useState(generateRandomArrows());
   const [inputs2, setInputs2] = useState(Array(5).fill(""));
 
-  // Handler for reset button
+  
   const handleReset = () => {
     setRandomArrows(generateRandomArrows());
     setInputs(Array(5).fill(""));

@@ -52,12 +52,12 @@ const QuizItem = ({ index, updateScore, reset }) => {
     return null;
   };
 
-  useEffect(() => { // inputResult값이 바뀔 때 이 함수 사용됨
-    const res2 = result2(); // 
-    if (parseInt(inputResult) === res2) { // 일치하면 정답 true 반환
+  useEffect(() => { 
+    const res2 = result2(); 
+    if (parseInt(inputResult) === res2) { 
       updateScore(index, true);
     } else {
-      updateScore(index, false); // 틀림 false 반환
+      updateScore(index, false); 
     }
   }, [inputResult]);
 

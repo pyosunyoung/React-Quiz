@@ -12,11 +12,11 @@ function Quiz3() {
     { number: 12, price: 510 }
   ];
 
-  const [userAnswers, setUserAnswers] = useState(initialQuestions.map(() => ({ ten: "", fifty: "", hundred: "" }))); // { ten: "", fifty: "", hundred: "" }구조 4개 생성 및 배열 초기화
+  const [userAnswers, setUserAnswers] = useState(initialQuestions.map(() => ({ ten: "", fifty: "", hundred: "" }))); 
 
   const handleAnswerChange = (index, coin, value) => {
-    const newAnswers = [...userAnswers]; //배열안에 { ten: "", fifty: "", hundred: "" }구조 4개 들어감
-    newAnswers[index][coin] = value; // coin = ten index=0 value= 3이 들어오면 { ten: "", fifty: "", hundred: "" }의 첫번째 객체의 ten의 값은 3이 되는것
+    const newAnswers = [...userAnswers]; 
+    newAnswers[index][coin] = value; 
     setUserAnswers(newAnswers);
   };
 
@@ -49,7 +49,7 @@ function Quiz3() {
       <div className='quiz_container3'>
         <div className='quiz3'>
           
-          {initialQuestions.map((question, index) => ( //처음 생성된건 index1, 2 3 이렇게 map이니까 차례로 생성(4번 생성)
+          {initialQuestions.map((question, index) => ( 
             <Quiz3Item
               key={index}
               number={question.number}
